@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Email</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/0aa1eb4cf4.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Concert+One&family=Cutive+Mono&family=Great+Vibes&family=Hind+Vadodara:wght@300&family=Lobster+Two&family=Moirai+One&family=Playfair+Display:wght@500&family=Press+Start+2P&family=Roboto:wght@100;300&family=UnifrakturCook:wght@700&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--Start Navbar-->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto ml-5 mb-lg-0">
+            <a class="navbar-brand" href="">Not Snail Mail</a>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inbox</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Important</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Spam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trash</a>
+            </li>
+          </ul>
+          <form class="d-flex w-50" id="search-bar" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <div class="dropdown-menu">
+            <button class="btn btn-primary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/profile.png" alt="profile pic" class="img-fluid" width="30" height="24">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Add/Manage Account</a></li>
+              <li><a class="dropdown-item" href="#">Account Information</a></li>
+              <li><a class="dropdown-item" href="#">Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+  </nav>
+  <!--End Navbar-->
+
+  <!--Start First Column-->
+  <div class="container-fluid">
+      <h1 class="tagline px-2">Welcome to your dashboard.</h1>
+      <hr>
+      <div class="col-12 col-md-6">
+        <div class="d-grid">
+          <button type="button" class="btn btn-outline-primary position-relative w-50" id="inbox">
+            Inbox<span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+1,054<span
+                class="visually-hidden">unread messages</span></span>
+          </button>
+          <!--Off canvas for writing email-->
+          <button class="btn btn-primary mt-3 w-50" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Compose</button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">To</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Recipient ">
+                <label for="exampleFormControlInput1" class="form-label">CC</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Recipient">
+              </div>
+              <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="What would you like to say?"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End First Column-->
+
+      <!--Start Second Column-->
+      <div class="col-5">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+              </label>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mx-2">THE PLANT EXCHANGE</h5>
+                <small>Tuesday</small>
+              </div>
+            </div>
+            <small class="mx-4">SATURDAY 10/14 - OAKLAND - GARDEN SALE: POTS! POTS!</small>
+            <p class="mx-4">Hello Friends! We're excited to host a special pop up event in Oakland on October 14.</p>
+            <small class="m-4">
+              <button type="button" class="btn btn-primary btn-sm">Reply</button>
+              <button type="button" class="btn btn-primary btn-sm">Forward</button>
+              <button type="button" class="btn btn-primary btn-sm">Delete</button>
+              <button type="button" class="btn btn-primary btn-sm">Trash</button>
+              <button type="button" class="btn btn-primary btn-sm">Archive</button>
+            </small>
+          </a>
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+              </label>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mx-2">Goldenvoice</h5>
+                <small>Thursday</small>
+              </div>
+            </div>
+            <small class="mx-4">Jhene Aiko is OTW to The Bay this winter...</small>
+            <p class="mx-4">Register for Presale Access! Jhene Aiko with Tink, Coco J</p>
+            <small class="m-4">
+              <button type="button" class="btn btn-primary btn-sm">Reply</button>
+              <button type="button" class="btn btn-primary btn-sm">Forward</button>
+              <button type="button" class="btn btn-primary btn-sm">Delete</button>
+              <button type="button" class="btn btn-primary btn-sm">Trash</button>
+              <button type="button" class="btn btn-primary btn-sm">Archive</button>
+            </small>
+          </a>
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+              </label>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mx-2">Golden State Warriors</h5>
+                <small>Monday</small>
+              </div>
+            </div>
+            <small class="mx-4">Just Announced: Warriors Giveaway & Promotional Nights </small>
+            <p class="mx-4">Secure Your Tickets for Limited-Edition Giveaways, Herita</p>
+            <small class="m-4">
+              <button type="button" class="btn btn-primary btn-sm">Reply</button>
+              <button type="button" class="btn btn-primary btn-sm">Forward</button>
+              <button type="button" class="btn btn-primary btn-sm">Delete</button>
+              <button type="button" class="btn btn-primary btn-sm">Trash</button>
+              <button type="button" class="btn btn-primary btn-sm">Archive</button>
+            </small>
+          </a>
+        </div>
+      </div>
+
+      <!--Start third column-->
+      <div class="col-lg-">
+            <div class="d-flex w-100">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+              </label>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mx-2">Golden State Warriors</h5>
+                <small>Monday</small>
+              </div>
+            </div>
+            <small class="mx-4">Just Announced: Warriors Giveaway & Promotional Nights </small>
+            <p class="mx-4">Secure Your Tickets for Limited-Edition Giveaways, Herita</p>
+            <small class="m-4">
+              <button type="button" class="btn btn-primary btn-sm">Reply</button>
+              <button type="button" class="btn btn-primary btn-sm">Forward</button>
+              <button type="button" class="btn btn-primary btn-sm">Delete</button>
+              <button type="button" class="btn btn-primary btn-sm">Trash</button>
+              <button type="button" class="btn btn-primary btn-sm">Archive</button>
+            </small>
+          </a>
+        </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
